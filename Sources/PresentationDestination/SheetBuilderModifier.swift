@@ -38,7 +38,7 @@ public extension View {
     return modifier(DestinationBuilderModifier(typedDestinationBuilder: { AnyView(builder($0)) }))
   }
   
-  func globalSheet() -> some View {
+  func presentationHost() -> some View {
     return modifier(GlobalSheetModifier())
   }
 }
